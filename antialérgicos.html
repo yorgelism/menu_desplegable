@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Menú Desplegable de Farmacia</title>
+	<style type="text/css">
+		* {
+			margin:0px;
+			padding:0px;
+		}
+		
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: #F4F4F4;
+		}
+		
+		#header {
+			margin:auto;
+			width: 100%;
+			background-color: #0077b6;
+		}
+		
+		ul, ol {
+			list-style:none;
+		}
+		
+		.nav > li {
+			float:left;
+		}
+		
+		.nav li a {
+			background-color:#0077b6;
+			color:#fff;
+			text-decoration:none;
+			padding:15px 20px;
+			display:block;
+			font-size: 18px;
+			transition: all 0.2s ease-in-out;
+		}
+		
+		.nav li a:hover {
+			background-color:#fff;
+			color:#000;
+		}
+		
+		.nav li ul {
+			display:none;
+			position:absolute;
+			min-width:200px;
+			background-color: #fff;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			z-index: 1;
+			border-radius: 5px;
+		}
+		
+		.nav li:hover > ul {
+			display:block;
+		}
+		
+		.nav li ul li {
+			position:relative;
+			border-bottom: 1px solid #ccc;
+		}
+		
+		.nav li ul li:last-child {
+			border-bottom: none;
+		}
+		
+		.nav li ul li a {
+			color: white;
+			padding: 10px;
+			font-size: 16px;
+			display: block;
+			transition: all 0.2s ease-in-out;
+		}
+		
+		.nav li ul li a:hover {
+			background-color: #0077b6;
+			color:red;
+		}
+		
+		main {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 30px;
+			background-color: #fff;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			border-radius: 5px;
+			text-align: center;
+		}
+		
+		h2 {
+			margin-bottom: 20px;
+		}
+		
+		p {
+			margin-bottom: 30px;
+		}
+		
+		img {
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+		
+		footer {
+			text-align: center;
+			margin-top: 30px;
+			padding: 10px;
+			background-color: #0077b6;
+			color: #fff;
+		}
+		
+		footer p {
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<ul class="nav">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="">Medicamentos</a>
+				<ul>
+					<li><a href="analgésicos.html">Analgésicos</a></li>
+					<li><a href="antiinflamatorios.html">Antiinflamatorios</a></li>
+					<li><a href="antibióticos.html">Antibióticos</a></li>
+					<li><a href="antialérgicos.html">Antialérgicos</a></li>
+				</ul>
+			</li>
+			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="nosotros.html">Nosotros</a></li>
+		</ul>
+	</div>
+	
+	<main>
+		<h2>Antialérgicos</h2>
+		<p>Los antialérgicos son medicamentos utilizados para tratar las reacciones alérgicas. Estas reacciones pueden ser causadas por una variedad de factores, como el polen, los ácaros del polvo, el pelo de animales, los alimentos y otros alérgenos.</p>
+		
+		<ul class="productos">
+			<li class="producto">
+				<h3>Claritin</h3>
+				<div class="precio">$10.99</div>
+				<div class="descripcion">Claritin es un antihistamínico utilizado para tratar los síntomas de alergias estacionales, como la fiebre del heno, los ojos llorosos, la congestión nasal y el estornudo. Este medicamento actúa bloqueando la acción de la histamina en el cuerpo.</div>
+			</li>
+			<li class="producto">
+				<h3>Zyrtec</h3>
+				<div class="precio">$12.99</div>
+				<div class="descripcion">Zyrtec es un antihistamínico utilizado para tratar los síntomas de alergias estacionales y perennes, como la congestión nasal, los ojos llorosos, la picazón y el estornudo. Este medicamento actúa bloqueando la acción de la histamina en el cuerpo.</div>
+			</li>
+			<li class="producto">
+				<h3>Allegra</h3>
+				<div class="precio">$11.99</div>
+				<div class="descripcion">Allegra es un antihistamínico utilizado para tratar los síntomas de alergias estacionales y perennes, como la congestión nasal, los ojos llorosos, la picazón y el estornudo. Este medicamento actúa bloqueando la acción de la histamina en el cuerpo.</div>
+			</li>
+			<li class="producto">
+				<h3>Benadryl</h3>
+				<div class="precio">$8.99</div>
+				<div class="descripcion">Benadryl es un antihistamínico utilizado para tratar los síntomas de las reacciones alérgicas, como la urticaria, la picazón, la congestión nasal y el estornudo. Este medicamento actúa bloqueando la acción de la histamina en el cuerpo y también puede tener un efecto sedante.</div>
+			</li>
+		</ul>
+	</main>
+	
+	<footer>
+		<p>© 2023 Farmacia. Todos los derechos reservados.</p>
+	</footer>
+</body>
+</html>
